@@ -30,7 +30,7 @@
 var fs = require( 'fs' ) ;
 var path = require( 'path' ) ;
 var tree = require( 'tree-kit' ) ;
-var termkit = require( 'terminal-kit.js' ) ;
+var termkit = require( 'terminal-kit' ) ;
 var term ;
 var ScreenBuffer = termkit.ScreenBuffer ;
 
