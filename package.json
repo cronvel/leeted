@@ -1,6 +1,6 @@
 {
   "name": "leeted",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "A sprite editor for terminal application. ASCII Art, UTF8 Art & ANSI Art are supported.",
   "directories": {
     "test": "test"
@@ -9,7 +9,7 @@
     "leeted": "./bin/leeted"
   },
   "dependencies": {
-    "terminal-kit": "^0.8.0",
+    "terminal-kit": "^0.9.0",
     "async-kit": "^0.5.5",
     "tree-kit": "^0.3.1",
     "glob": "^4.0.5"

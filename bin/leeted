@@ -33,6 +33,7 @@ var tree = require( 'tree-kit' ) ;
 var termkit = require( 'terminal-kit' ) ;
 var term ;
 var ScreenBuffer = termkit.ScreenBuffer ;
+var Rect = termkit.Rect ;
 
 
 
@@ -507,56 +508,56 @@ function inputs( key , matches , data )
 		
 		// Resize keys
 		case 'CTRL_UP' :
-			rect = ScreenBuffer.Rect.create( canvas ) ;
+			rect = Rect.create( canvas ) ;
 			rect.set( { ymax: rect.ymax - 1 } ) ;
 			canvas.resize( rect ) ;
 			refreshStatusBar() ;
 			redrawCanvas() ;
 			break ;
 		case 'CTRL_DOWN' :
-			rect = ScreenBuffer.Rect.create( canvas ) ;
+			rect = Rect.create( canvas ) ;
 			rect.set( { ymax: rect.ymax + 1 } ) ;
 			canvas.resize( rect ) ;
 			refreshStatusBar() ;
 			redrawCanvas() ;
 			break ;
 		case 'CTRL_LEFT' :
-			rect = ScreenBuffer.Rect.create( canvas ) ;
+			rect = Rect.create( canvas ) ;
 			rect.set( { xmax: rect.xmax - 1 } ) ;
 			canvas.resize( rect ) ;
 			refreshStatusBar() ;
 			redrawCanvas() ;
 			break ;
 		case 'CTRL_RIGHT' :
-			rect = ScreenBuffer.Rect.create( canvas ) ;
+			rect = Rect.create( canvas ) ;
 			rect.set( { xmax: rect.xmax + 1 } ) ;
 			canvas.resize( rect ) ;
 			refreshStatusBar() ;
 			redrawCanvas() ;
 			break ;
 		case 'SHIFT_UP' :
-			rect = ScreenBuffer.Rect.create( canvas ) ;
+			rect = Rect.create( canvas ) ;
 			rect.set( { ymin: rect.ymin - 1 } ) ;
 			canvas.resize( rect ) ;
 			refreshStatusBar() ;
 			redrawCanvas() ;
 			break ;
 		case 'SHIFT_DOWN' :
-			rect = ScreenBuffer.Rect.create( canvas ) ;
+			rect = Rect.create( canvas ) ;
 			rect.set( { ymin: rect.ymin + 1 } ) ;
 			canvas.resize( rect ) ;
 			refreshStatusBar() ;
 			redrawCanvas() ;
 			break ;
 		case 'SHIFT_LEFT' :
-			rect = ScreenBuffer.Rect.create( canvas ) ;
+			rect = Rect.create( canvas ) ;
 			rect.set( { xmin: rect.xmin - 1 } ) ;
 			canvas.resize( rect ) ;
 			refreshStatusBar() ;
 			redrawCanvas() ;
 			break ;
 		case 'SHIFT_RIGHT' :
-			rect = ScreenBuffer.Rect.create( canvas ) ;
+			rect = Rect.create( canvas ) ;
 			rect.set( { xmin: rect.xmin + 1 } ) ;
 			canvas.resize( rect ) ;
 			refreshStatusBar() ;
