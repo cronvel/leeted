@@ -1,0 +1,45 @@
+{
+  "name": "leeted",
+  "version": "0.1.0",
+  "description": "A sprite editor for terminal application. ASCII Art, UTF8 Art & ANSI Art are supported.",
+  "directories": {
+    "test": "test"
+  },
+  "bin": {
+    "leeted": "./bin/leeted"
+  },
+  "dependencies": {
+    "terminal-kit": "^0.8.0",
+    "async-kit": "^0.5.5",
+    "tree-kit": "^0.3.1",
+    "glob": "^4.0.5"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "jshint": "^2.5.5",
+    "mocha": "^1.21.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cronvel/leeted.git"
+  },
+  "keywords": [
+    "sprite",
+    "editor",
+    "ascii",
+    "art",
+    "utf8",
+    "ansi",
+    "elite",
+    "leet",
+    "1337"
+  ],
+  "author": "Cédric Ronvel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cronvel/leeted/issues"
+  }
+}
