@@ -26,6 +26,10 @@ Then just run it, and have fun:
 
 ## Keys
 
+Any regular key pressed is written down.
+
+This is the list of special keys:
+
 * CTRL-C: Quit
 * CTRL-S: Save file
 * Arrow: Move the cursor
