@@ -300,6 +300,7 @@ function refreshStatusBar()
 {
 	var keyOptions = { attr: { bgColor: 'brightWhite' , color: 'green' } } ;
 	var valueOptions = { attr: { bgColor: 'brightWhite' , color: 'blue' } } ;
+	var altValueOptions = { attr: { bgColor: 'white' , color: 'black' } } ;
 	var cursorCell = canvas.get() ;
 	
 	statusBar.fill( { attr: keyOptions.attr , char: ' ' } ) ;
@@ -331,7 +332,7 @@ function refreshStatusBar()
 	statusBar.put( { attr: { bgColor: cursorCell.attr.color } } , ' ' ) ;
 	statusBar.put( valueOptions , cursorCell.attr.bgColor ) ;
 	statusBar.put( { attr: { bgColor: cursorCell.attr.bgColor } } , ' ' ) ;
-	statusBar.put( valueOptions , cursorCell.char ) ;
+	statusBar.put( altValueOptions , cursorCell.char ) ;
 	statusBar.put( valueOptions , stylesString( cursorCell.attr ) ) ;
 	
 	redrawStatusBar() ;
